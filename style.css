@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
+:root{
+    /* --soft-font: 'Barlow', sans-serif;
+    --rigid-font: 'Fraunces', serif; */
+    --white: hsl(0, 0%, 100%);
+    --greublue: hsl(232, 10%, 55%); 
+    --soft: 'Barlow', sans-serif;
+    --hard: 'Fraunces', serif;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Fraunces', serif;
+    box-sizing: border-box;
+}
+
+
+/* header */
+
+main{
+    width: 100vw;
+    height: 100vh;
+}
+.header{
+    width: 100%;
+    height: 70%;
+    background-image: url("/desktop images/image-header.jpg");
+    background-position: center;
+    background-size: cover;
+    color: var(--white);
+}
+.nav-bar{
+    padding: 2rem 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    font-family: var(--soft-font);
+    font-weight: 600;
+}
+.list{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 60px;
+    font-family: var(--rigid-font);
+    font-size: small;
+    font-weight:200;
+    padding: 0 5px;
+    align-items: center;
+}
+
+.list a{
+    text-decoration: none;
+    color: white;
+}
+.list a:hover{
+    color: rgb(146, 89, 199);
+}
+.contact{
+    width: 8rem;
+    height: 2.5rem;
+    border-radius: 20px;
+    background-color: #ffff;
+    justify-content: center;
+    padding: 10px 0 0 20px;
+}
+.contact a{
+    margin-inline: auto;
+    color:rgba(0, 0, 0, 0.637);
+    font-size: 16px;
+    font-weight: 300;
+}
+.promo-cont h1{
+    margin: 50px;
+    text-transform:uppercase;
+    text-align: center;
+    font-family: var(--rigid-font);
+    font-size: 18px;
+    font-weight: 700;
+}
+.icon{
+    margin-inline: auto;
+    width: 5rem;
+    height: 6rem;
+    justify-content: center;
+    text-align: center;
+}
+.icon i{
+    width: 20px;
+    height: 100px;
+    color: var(--white);
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 4rem;
+
+}
+
+/* grid */
+
+
+.grid-container{
+    display: grid; 
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+}
+
+.grid-item{
+    display: block;
+    height: 70vh;
+}
+.grid-item img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+.text-cont{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    flex: 1 1 80%;
+    width: 100%;
+    height: 100%;
+    padding: 0 100px 0 ;
+    text-align: justify;
+    word-spacing: 1px;
+    line-height: 2.5rem;
+}
+.text-cont h3{
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 2rem;
+    padding: 0 40px;
+}
+.text-cont p{
+    font-family: var(--soft);
+    font-size: 14px;
+    color: hsl(232, 10%, 55%);
+    padding: 0 40px;
+}
+.text-cont a{
+    color: hsl(212, 27%, 19%);
+    font-family: var(--hard);
+    text-transform: uppercase;
+    word-spacing: 1px;
+    padding: 0 40px;
+}
+.text-cont #pink{
+    text-decoration: underline;
+    text-decoration-color: hsl(51, 100%, 49%);
+    text-decoration-style: solid;
+    text-decoration-thickness: 5px;
+}
+
+.text-cont #purpul{
+    text-decoration: underline;
+    text-decoration-color: rgb(250, 127, 223);
+    text-decoration-style: solid;
+    text-decoration-thickness: 5px; 
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    padding: 0 2rem 3rem;
+    justify-content: end;
+    text-align:center;
+    word-spacing: 1px;
+    line-height: 1.5em;
+}
+.card h3{
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+ 
+}
+.card p{
+    padding: 0 60px ;
+    font-family: var(--soft);
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+#cherry{
+    color: hsl(167, 40%, 24%);
+    background-image: url("/desktop images/image-graphic-design.jpg");  
+    background-position: center; 
+    background-size: cover; 
+    
+}
+#orange{
+    color: hsl(198, 62%, 26%);
+    background-image: url("/desktop images/image-photography.jpg");
+    background-position: center; 
+    background-size: cover; 
+    
+}
+
+/* flex */
+
+.testimonials{
+    width: 100%;
+    height: 70%;
+    padding: 40px 0 50px 0;
+}
+
+ #testimony{
+    margin: 0  0  30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--greublue);
+}
+.flex{
+    display: flex;  
+   justify-content: space-evenly;
+   padding: 20px 30px;
+
+ }
+ 
+.testimony{
+    width: 95%;
+    padding: 3rem;
+    text-align: center;
+}
+article{
+    width: 1rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+ }
+.testimony img{
+    width: 60px;
+    height: 60p;
+    border-radius: 50%;
+    align-self: center;
+}
+.testimony .text{
+    text-align: center;
+    font-family: 'Barlow', sans-serif ;
+    font-size: 16px;
+    line-height: 1.5rem;
+    color: hsl(213, 9%, 39%);
+}
+.testimony .name{
+    font-family: 'Fraunces', sans-serif;
+    font-size: 18px;
+    color: hsl(212, 27%, 19%);
+}
+.testimony .job{
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    color: hsl(210, 4%, 67%);
+}
+
+
+
+/* images collage */
+
+
+.collage-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    width: 100%;
+    height: 70%;
+    }
+.coll-div{
+    width: 100%;
+    height: 100%;
+}
+.coll-div img{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+/* footer */
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70%;
+    background-color: hsl(168, 56%, 68%);
+    gap: 50px;
+    padding: 30px 0 0 0;
+    justify-content: center;
+    align-items: center;
+}
+.footer h1{
+   font-family: var(--hard); 
+   font-size: 3em;
+   font-weight: 800;
+   line-height: 2px;
+   color: hsl(167, 40%, 24%);
+}
+.footer .list{
+    list-style: none;
+    justify-content: baseline;
+    font-family: var(--soft);
+    font-size: 1em;
+    font-weight: 500;
+    color: hsla(168, 89%, 36%, 0.87);
+    margin-top: 10px;
+}
+.media-icons{
+    display: flex;
+    gap: 25px;
+    justify-content:space-evenly;
+    color: hsla(168, 88%, 29%, 0.87);
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 15px;
+}
+.footer a{
+    color: hsla(168, 88%, 29%, 0.87);
+    text-decoration: none;
+}
+.media-icons a  i:hover{
+    color: rgb(60, 60, 190);
+    cursor: pointer;
+}
